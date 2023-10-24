@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.container__text, .container__invest {
+    flex: 0 1 50%;
+}
+.container__text {
+    margin: 30px 0 0 210px;
+}
+.container__paragraph {
+    padding-bottom: 30px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #2205fc;
+    opacity: 0.9;
+}
+.container__tittle {
+    padding-bottom: 70px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.container__cash-pay {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.container__pay {
+    border: none;
+    margin-top: 238px;
+}
+.container__main {
+    display: flex;
+}
+.frst-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.bank-card {
+    margin-top: 48px;
+}
+.container__pay input[type="radio"] {
+    height: 20px;
+    width: 20px;
+}
+.label-pay {
+    padding-left: 15px;
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.6;
+}
+.container__sum {
+    width: 637px;
+    border: none;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.label-sum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 25%;
+    height: 40px; 
+    text-align: center;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.label-other {
+    width: 637px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: none;
+
+}
+.container__sum input {
+    appearance: none;
+}
+.label-sum {
+    cursor: pointer;
+}
+.btn-sum:checked + .label-sum {
+    background-color: #2205fc;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+.container__data {
+    display: flex;
+    margin-top: 20px;
+
+}
+.container__data input[type="radio"] {
+    height: 20px;
+    width: 20px;
+}
+.block-data {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__data label, .container__checkbox span {
+    padding-left: 15px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.6;
+}
+.container__name {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container__username, .container__email {
+    flex: 0 1 90%;
+}
+.container__name label{
+    padding: 20px 0;
+    width: 478px;
+    display: block;
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.container__name input {
+    padding-bottom: 7px;
+    width: 478px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.35;
+}
+.container__checkbox {
+    display: flex;
+    margin-top: 30px;
+}
+.custom-block input {
+    position: absolute;
+    visibility: hidden;
+}
+.custom-checkbox {
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-right: 10px;
+}
+.custom-block input[type="checkbox"]:checked + .custom-checkbox {
+    background: url(./images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container__checkbox a {
+    text-decoration: none;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: #2205fc;
+}
+.btn-submit {
+    cursor: pointer;
+    margin: 48px 0 20px;
+    border: none;
+    width: 213px;
+    height: 55px;
+    background-color: #2205fc;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.btn-submit:hover {
+    transform: scale(1.1);
+}
+input:focus-visible {
+    background-color: rgb(253, 241, 241);
+}
+button:focus {
+    background-color: #d66228;
+    
+}
+@media (min-width: 1200px) {
+    body {
+        width: 1440px;
+    }
+   
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container__text {
+        flex: 0 3 50%;
+}
+.container__text {
+    margin: 20px 0 0 30px;
+}
+.container__tittle {
+    padding-bottom: 37px;
+}
+}
+@media (min-width: 721px) and (max-width: 991px){
+    .container__text {
+        flex: 0 3 30%;
+    }
+.container__text {
+    margin: 15px 0 0 15px;
+}
+.container__tittle {
+    padding-bottom: 37px;
+}
+.container__tittle {
+    font-size: 24px;
+}
+}
+
+@media (max-width: 720px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container__invest,  .container__text {
+        width: 100%;
+    }
+    .container__text {
+        margin: 20px 0 0 30px;
+    }
+    .container__pay {
+        margin-top: 30px;
+    }
+    .container__sum {
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .label-other {
+        width: 100%;
+    }
+}
+@media (max-width: 460px){
+    .container__text {
+        margin: 20px 0 0 10px;
+    }
+    .container__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container__tittle {
+        font-size: 24px;
+    }
+    .bank-card {
+        margin-left: 10px;
+    }
+    .container__main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+   
+ 
+    }
+    .frst-block {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 5px 0 0 10px;
+    }
+    .container__data, .container__name, .container__checkbox {
+        padding-left: 10px;
+    }
+    .container__name input {
+        width: 250px;
+    }
+    .btn-submit {
+        display: block;
+        margin: 30px auto;
+    }
+}
