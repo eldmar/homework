@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <div class="container__text">
+            <div class="container__info">
+                <p class="container__paragraph">інвестиції</p>
+                <h3 class="container__tittle">зробити<br>
+                — інвестиції у програму</h3>
+                <p class="container__cash-pay">виберіть спосіб оплати</p>
+             </div>
+        </div>
+        <div class="container__invest">
+            <form class="container__form" aria-label="form">
+                <fieldset class="container__pay">
+                    <div class="container__main">
+                    <div class="frst-block" aria-label="bank card">
+                        <input class="btn-pay" type="radio" name="pay" value="bank" id="bank">
+                        <label class="label-pay" for="bank">Банківська карта</label>
+                    </div>    
+                    <div class="frst-block" aria-label="paypal">
+                        <input class="btn-pay" type="radio" name="pay" value="PayPal" id="PayPal">
+                        <label class="label-pay" for="PayPal">PayPal</label>
+                    </div> 
+                    <div class="frst-block" aria-label="banking check">
+                        <input class="btn-pay" type="radio" name="pay" value="check" id="check">
+                        <label class="label-pay" for="check">Банківська платіжна квитанція</label>
+                    </div>
+                    </div>
+                </fieldset>
+                <p class="container__cash-pay bank-card">банківська карта</p>
+                <fieldset class="container__sum" aria-label="how much pay">
+                    <input class="btn-sum" type="radio" name="sum" value="50000" id="50000">
+                    <label class="label-sum" for="50000">50000</label>
+                    <input class="btn-sum" type="radio" name="sum" value="30000" id="30000">
+                    <label class="label-sum" for="30000">30000</label>
+                    <input class="btn-sum" type="radio" name="sum" value="10000" id="10000">
+                    <label class="label-sum" for="10000">10000</label>
+                    <input class="btn-sum" type="radio" name="sum" value="1000" id="1000">
+                    <label class="label-sum" for="1000">1000</label>
+                    <input  class="label-other" type="text" name="sum" id="other" placeholder="Інша сума">
+                    <label for="other"></label>
+                </fieldset>
+                <div class="container__data" aria-label="how often pay">
+                    <div class="block-data">
+                        <input type="radio" name="data" id="data-month">
+                        <label for="data">Щомісячно</label>
+                    </div>
+                    <div class="block-data">
+                        <input type="radio" name="data" id="data-once">
+                        <label for="data">Одноразово</label>
+                    </div>
+                </div>
+                <div class="container__name" aria-label="user name">
+                    <div class="container__username">
+                        <label for="username">ім’я</label>
+                        <input type="text" name="Username" id="username" placeholder="Напишіть ваше ім’я">
+                    </div>
+                    <div class="container__email" aria-label="user email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Напишіть вашу електронну адресу">
+                    </div>
+                </div>
+                <div class="container__checkbox" aria-label="agree with rules">
+                    <label class="custom-block">
+                        <input type="checkbox" name="check">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                        <span>Я приймаю договір <a href="" aria-label="Pleasure about the selection of personal data">Угоду про використання персональних даних</a></span>
+                </div>
+                <div class="container__checkbox">
+                    <label class="custom-block">
+                        <input type="checkbox" name="check">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                        <span>Я приймаю договір <a href="" aria-label="Contract offer">Договір оферти</a></span>
+                </div>
+                <button type="submit" aria-label="submit" class="btn-submit">відправити</button> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
